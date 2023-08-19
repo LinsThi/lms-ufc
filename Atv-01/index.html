@@ -1,14 +1,118 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-
-    <title>League of legends</title>
-
-    <link rel="stylesheet" href="main.css" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>LMS - LoL</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
 
-  <body></body>
+  <body>
+    <!-- Cabeçalho -->
+    <header>
+      <h1>League of legends</h1>
+      <h2>Campeões que mais jogo</h2>
+    </header>
+
+    <!-- Listagem das gpus -->
+    <section id="gpu-list">
+      <ul style="display: flex; gap: 30px; list-style-type: none">
+        <li>
+          <a
+            href="https://www.leagueoflegends.com/pt-br/champions/yasuo/"
+            target="_blank"
+            style="text-decoration: none"
+          >
+            <image
+              src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Yasuo_0.jpg"
+              alt="RTX 4090"
+              width="300"
+              height="200"
+            />
+            <p style="color: orangered"><b>Yasuo</b></p>
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="https://www.leagueoflegends.com/pt-br/champions/katarina/"
+            target="_blank"
+            style="text-decoration: none"
+          >
+            <image
+              src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Katarina_0.jpg"
+              alt="RTX 4090"
+              width="300"
+              height="200"
+            />
+            <p style="color: orangered">
+              <b>Katarina</b>
+            </p>
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="https://www.leagueoflegends.com/pt-br/champions/aurelion-sol/"
+            target="_blank"
+            style="text-decoration: none"
+          >
+            <image
+              src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/AurelionSol_0.jpg"
+              alt="RTX 4090"
+              width="300"
+              height="200"
+            />
+            <p style="color: orangered">
+              <b>Aurelion Sol</b>
+            </p>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <br />
+    <hr />
+
+    <!-- Table -->
+    <section>
+      <h2>Tabela de informações</h2>
+      <table style="width: 50%">
+        <thead>
+          <tr style="text-align: center">
+            <th>Campeão</th>
+            <th>Rota jogada</th>
+            <th>Estilo</th>
+            <th>Tipo de dano</th>
+            <th>Dificuldade</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="text-align: center">
+            <td><b>Yasuo</b></td>
+            <td>Mid/Top laner</td>
+            <td>Lutador</td>
+            <td>Dano físico</td>
+            <td style="color: green"><b>Médio</b></td>
+          </tr>
+
+          <tr style="text-align: center">
+            <td><b>Katarina</b></td>
+            <td>Mid laner</td>
+            <td>Assasino</td>
+            <td>Dano mágico</td>
+            <td style="color: green"><b>Médio</b></td>
+          </tr>
+
+          <tr style="text-align: center">
+            <td><b>Aurelion Sol</b></td>
+            <td>Mid laner</td>
+            <td>Mago</td>
+            <td>Dano mágico</td>
+            <td style="color: red"><b>Dificil</b></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </body>
 </html>
