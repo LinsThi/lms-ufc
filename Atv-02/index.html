@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>LMS - LoL</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body style="padding: 10px 20px">
+    <!-- Cabeçalho da página -->
+    <header style="display: flex">
+      <!-- Aqui, usamos o &nbsp; para colocar espaços no texto, visto que é um caracter especial -->
+      <article classname="game-info" style="width: 30%">
+        <h1>League of legends</h1>
+        <p>
+          &nbsp; &nbsp;League of Legends é um jogo eletrônico do gênero
+          multiplayer online battle arena desenvolvido e publicado pela Riot
+          Games. Foi lançado em outubro de 2009 para Microsoft Windows e em
+          março de 2013 para macOS.
+        </p>
+
+        <p>
+          &nbsp; &nbsp;No jogo, duas equipes de cinco jogadores batalham em um
+          combate jogador contra jogador (PvP), com cada equipe ocupando e
+          defendendo sua metade do mapa. Cada um dos dez jogadores controla um
+          personagem, conhecido como "campeão", com habilidades únicas e
+          diferentes estilos de jogo. Durante uma partida, os campeões se tornam
+          mais poderosos ao coletarem pontos de experiência, ganharem ouro e
+          comprarem itens a fim de derrotar a equipe adversária. No modo
+          principal, Summoner's Rift, o objetivo primário é avançar até a base
+          inimiga e destruir uma grande estrutura localizada em seu centro, sob
+          o nome de "Nexus".
+        </p>
+      </article>
+
+      <aside style="display: flex; flex: 1; flex-direction: column">
+        <h2 style="text-align: center">Campeões que mais jogo</h2>
+
+        <section id="champions-list">
+          <!-- Aqui, estou colocando uma lista horizontal e com espaçamento, com os 3 campeões que mais jogo -->
+          <ul style="display: flex; gap: 30px; list-style-type: none">
+            <li>
+              <a
+                href="https://www.leagueoflegends.com/pt-br/champions/yasuo/"
+                target="_blank"
+                style="text-decoration: none"
+              >
+                <image
+                  src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Yasuo_0.jpg"
+                  alt="Yasuo"
+                  width="300"
+                  height="200"
+                />
+                <p style="color: orangered"><b>Yasuo</b></p>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://www.leagueoflegends.com/pt-br/champions/katarina/"
+                target="_blank"
+                style="text-decoration: none"
+              >
+                <image
+                  src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Katarina_0.jpg"
+                  alt="Katarina"
+                  width="300"
+                  height="200"
+                />
+                <p style="color: orangered">
+                  <b>Katarina</b>
+                </p>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://www.leagueoflegends.com/pt-br/champions/aurelion-sol/"
+                target="_blank"
+                style="text-decoration: none"
+              >
+                <image
+                  src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/AurelionSol_0.jpg"
+                  alt="Aurelion Sol"
+                  width="300"
+                  height="200"
+                />
+                <p style="color: orangered">
+                  <b>Aurelion Sol</b>
+                </p>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </aside>
+    </header>
+
+    <br />
+    <hr />
+
+    <!-- Tabela de informações, onde eu crio um thead(cabeçalho da tabela) e vou preenchendo com as informações dos campeões -->
+    <main style="display: flex">
+      <section style="height: 100%">
+        <h2>Tabela de informações</h2>
+        <table>
+          <thead>
+            <tr style="text-align: center">
+              <th>Campeão</th>
+              <th>Rota jogada</th>
+              <th>Estilo</th>
+              <th>Tipo de dano</th>
+              <th>Dificuldade</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="text-align: center">
+              <td><b>Yasuo</b></td>
+              <td>Mid/Top laner</td>
+              <td>Lutador</td>
+              <td>Dano físico</td>
+              <td style="color: green"><b>Médio</b></td>
+            </tr>
+
+            <tr style="text-align: center">
+              <td><b>Katarina</b></td>
+              <td>Mid laner</td>
+              <td>Assasino</td>
+              <td>Dano mágico</td>
+              <td style="color: green"><b>Médio</b></td>
+            </tr>
+
+            <tr style="text-align: center">
+              <td><b>Aurelion Sol</b></td>
+              <td>Mid laner</td>
+              <td>Mago</td>
+              <td>Dano mágico</td>
+              <td style="color: red"><b>Dificil</b></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Article para o formulário -->
+      <article
+        style="
+          display: flex;
+          flex: 1;
+          flex-direction: column;
+          align-items: center;
+        "
+        classname="lol-form"
+      >
+        <h2>E você, com qual campeão você mais joga?</h2>
+         <!-- Formulário para usuários -->
+        <form action="https://www.w3schools.com/action_page.php" method="get">
+          <article style="display: flex; gap: 50px; margin-bottom: 30px;">
+            <div
+            style="
+              display: flex;
+              flex-direction: column;
+              gap: 10px;
+            "
+          >
+            <label style="font-weight: bold">Nome:</label>
+            <input type="text" name="name" maxlength="15" required />
+          </div>
+
+          <div
+            style="
+              display: flex;
+              flex-direction: column;
+              gap: 10px;
+            "
+          >
+            <label style="font-weight: bold">Gênero:</label>
+
+            <section classname="gender" style="display:flex; gap: 10px;">
+              <input type="radio" id="male" name="gender" value="male" />
+              <label for="male">Masculino</label>
+              <br />
+              <input type="radio" id="female" name="gender" value="female" />
+              <label for="female">Feminino</label>
+              <br />
+              <input
+                type="radio"
+                id="no-answer"
+                name="gender"
+                value="no-answer"
+              />
+              <label for="no-answer">Prefiro não responder</label>
+              <br />
+            </section>
+          </div>
+          </article>
+
+          <article style="display: flex; gap: 50px; margin-bottom: 10px;">
+            <div
+            style="
+              display: flex;
+              flex-direction: column;
+              gap: 10px;
+            "
+          >
+            <label style="font-weight: bold"
+              >Quais são as rotas que você joga:</label
+            >
+
+            <section classname="gender" style="display: flex; gap: 10px">
+              <input type="checkbox" id="top" name="top" value="top" />
+              <label for="top">Top</label>
+              <br />
+              <input type="checkbox" id="jg" name="jg" value="jg" />
+              <label for="jg">JG</label>
+              <br />
+              <input type="checkbox" id="mid" name="mid" value="mid" />
+              <label for="mid">Mid</label>
+              <br />
+              <input type="checkbox" id="adc" name="adc" value="adc" />
+              <label for="adc">Atirador</label>
+              <br />
+              <input type="checkbox" id="sup" name="sup" value="sup" />
+              <label for="sup">Suporte</label>
+            </section>
+          </div>
+
+          <div style="display: flex;
+          flex-direction: column;
+          gap: 10px;
+          width: 180px;
+          "">
+            <label style="font-weight: bold;">Frase do dia:</label>
+            <input
+              type="text"
+              name="read"
+              readonly
+              value="Prazer em conhecer você =)"
+            />
+          </div>
+          </article>
+          
+          <div style="display: flex; justify-content: center;">
+            <input type="submit" value="Enviar" style="padding: 6px 10px; border-radius: 10px; border: none; margin: 10px 0;" />
+          </div>
+
+        </form>
+      </article>
+    </main>
+  </body>
+
+  <footer style="display: flex; justify-content: center; align-items: center; text-align: center;">
+    <span>&copy;Lins - LMS(Linguagens de Marcação e scripts) 2023.2</span>
+  </footer>
+</html>
