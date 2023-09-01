@@ -1,0 +1,13 @@
+.arms {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+}
+
+div.relative_arms_right {
+  position: relative;
+  width: 240px;
+  height: 140px;
+  left: 160px;
+  top: 60px;
+}
