@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  height: 100vh;
+}
+
+.nav-menu {
+  background-color: orangered;
+  width: 100%;
+
+  padding: 30px 20px;
+}
+
+.nav-menu > ul {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-menu > ul > button {
+  width: 100px;
+  padding: 5px 10px;
+  border-radius: 6px;
+  border: none;
+}
+
+.nav-menu > ul > button:hover {
+  filter: brightness(80%);
+}
+
+main {
+  display: flex;
+  height: 100%;
+}
+
+.left-menu {
+  width: 300px;
+  background-color: aqua;
+}
+
+.left-menu > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+
+  margin-top: 30px;
+}
+
+.left-menu > p {
+  text-align: center;
+  font-family: sans-serif;
+  margin-top: 20px;
+}
+
+.left-menu > ul > a {
+  width: 150px;
+  padding: 10px 0;
+  border-radius: 5px;
+  border: none;
+
+  background-color: slategray;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+}
+
+.left-menu > ul > a:hover {
+  background-color: antiquewhite;
+}
+
+.content {
+  width: 100%;
+  /* background-color: aquamarine; */
+  background: url("https://s2.glbimg.com/08QMn_l9zdWpST6k4Ic_x-tta4k=/e.glbimg.com/og/ed/f/original/2018/08/06/elliptical_elegance.jpg")
+    no-repeat;
+}
+
+.galery {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 50px;
+
+  padding: 50px;
+}
+
+.galery > img {
+  width: 150px;
+  height: 150px;
+}
+
+.right-menu {
+  width: 300px;
+  background-color: antiquewhite;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 13.5px;
+
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0 0 10px;
+  gap: 20px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  padding: 10px;
+  text-align: center;
+
+  background-color: aquamarine;
+}
